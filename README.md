@@ -1,0 +1,2 @@
+# project-management-system
+This project is a web application based software that stores and manages all the data needed to describe the project and their framework within an organization. It includes definition of various levels of hierarchy in an organization, the description of every department functioning in the organization and the overall employee database which integrates elements in all the aforementioned. Technology Used - JSP and Micrososft SQL Server
