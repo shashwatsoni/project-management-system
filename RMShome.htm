@@ -1,0 +1,81 @@
+<html>
+	<head>
+
+	
+	<title>PROJECT MANAGEMENT SYSTEM</title>
+	
+<SCRIPT LANGUAGE="JavaScript">
+function Validate()
+{
+	chkuser=document.loginform;			
+	if(chkuser.userid.value=="")	{	alert("Enter the Username"); chkuser.userid.focus();	return false;	}			
+	if ((chkuser.userid.value.length < 6)|| (chkuser.userid.value.length > 15)) 
+	{
+		alert("User id shouuld be 6 to 15 characters");
+		chkuser.userid.focus();
+		return false;
+	}
+	chkuser.userid.value=chkuser.userid.value;
+	
+	if(chkuser.password.value=="")	{	alert("Please Enter the Password"); chkuser.password.focus();	return false;	}			
+	if ((chkuser.password.value.length < 6)|| (chkuser.password.value.length > 15)) 
+	{
+		alert("Password should be 6 to 15 characters");
+		chkuser.password.focus();
+		return false;
+	}
+	chkuser.password.value=chkuser.password.value;
+	return true;
+//document.login.submit();
+}
+
+</SCRIPT>
+	</head>
+	<body>
+	  <table width=780 cellspacing=0 cellpadding=0 align=center border="0" bordercolor="#999966">
+		<tr><td>
+		<h4><center> PROJECT MANAGEMENT SYSTEM</h4>
+	      	</td></Tr>
+		<tr><td>
+		      
+            <table id="inner2" width=450 cellspacing=0 cellpadding=0 border=0 align=center>
+					
+						
+						
+							<form name=loginform onsubmit="return Validate()" action=userlogin.jsp METHOD="post" >
+							<tr><td>
+							<fieldset id="fieldhead"><legend>LOGIN</legend><BR>
+							<table id="inner" width=440 align=center>
+								<TR><TD colspan=3 nowrap id=expire></td></tr>
+								
+								
+	             				<tr>
+								   <Td  class=tablecontent3 align=right>USER ID:</td>
+								   <Td><input  class=login_textbox id=userfield size=25 name=userid></td>
+								 
+								   
+								</tr>
+
+								<tr>
+									<TD align="right"> PASSWORD:</font> </TD>
+										<td>
+											<INPUT  type="password" name="password" class=login_textbox id=passfield 
+                                                                size=25 name=password>
+										</td>
+									</tr>
+									<tr>								
+									<td colspan=2 align=center><button type=submit accesskey="L">Login</button>&nbsp;&nbsp;
+									<button type=reset accesskey="R">Clear</button></td>
+								</tr>
+								
+					      </table>
+						  </fieldset>
+						  </td></tr>
+						  </form><BR>
+                                                  
+						
+				</table></center>
+				
+	  </td></tr>
+	  </table>
+	</body></html>
